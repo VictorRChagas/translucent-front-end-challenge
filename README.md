@@ -4,6 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Notes:
 
+To save a new game some fields are required, the button of saving will be enabled
+only when those fields to be filled it up.
+
 The best approach to the feature of persisting locally would be to use the indexeddb instead of the local storage. There is some libs that abstract and make it easy to work
 with indexeddb locally, but it would take some time setting up the config and getting fluent with the lib API.
 
