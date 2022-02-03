@@ -1,0 +1,32 @@
+<p>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Games</span>
+      <span class="example-spacer"></span>
+      <button (click)="openNewGameDialog()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 m-auto">
+      <form>
+        <mat-form-field class="w-100" appearance="fill">
+          <mat-label>Search a game by its title</mat-label>
+          <input matInput [formControl]="gameTitle">
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-games></app-games>
+    </div>
+  </div>
+</div>
